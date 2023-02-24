@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <button onclick="console.log('hello click html')" class="button">Купить</button>
+    <div onclick="console.log('hello click html')" class="div-button">Купить 2</div>
+    <button onclick="console.log(counter++)" class="button">Купить 3</button> -->
+
+    <!-- Задание 2 -->
+
+    <!-- <button class="button">Купить 1</button>
+    <button class="button">Купить 2</button>
+    <button class="button">Купить 3</button> -->
+
+    <!-- Задание 3 -->
+
+    <!-- <ul class="menu">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+     </ul> -->
+
+    <!-- Задание 4 -->
+
+    <!-- <h1>Lorem ipsum dolor sit amet.</h1> -->
+
+    <!-- Задание 5 -->
+
+    <!-- <button class="button">Купить</button> -->
+
+    <!-- Задание 6 -->
+
+    <!-- <a href="https://yandex.ru/" class="link">yandex</a> -->
+
+    <!-- Задание 7, 8, 9 -->
+
+    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci dolore aut quia. Voluptate nobis ducimus officiis distinctio ipsum? Aspernatur nostrum, repellendus vero minus dolorum et delectus repellat commodi nam architecto.</p> -->
+
+    <!-- Задание 10 -->
+
+    <!-- <input type="text"> -->
+
+    <!-- Задание 11 -->
+
+    <!-- <form action="#">
+        <input class="input" type="text">
+        <div class="error"></div>
+        <button type="submit">Go</button>
+    </form> -->
+
+    <!-- Семинар
+
+    Блок1 -->
+
+    <!-- <button class="button">Нажми меня</button> -->
+
+    <!-- Блок 2 -->
+
+    <!-- <button class="button">Кнопка 1</button>
+    <button class="button">Кнопка 2</button>
+    <button class="button">Кнопка 3</button>
+    <button class="button4">Кнопка 4</button>
+    <button class="button5">Кнопка 5</button> -->
+
+    <!-- Блок 3 -->
+
+    <!-- <button class="button1">Кнопка 1</button>
+    <button class="button2">Кнопка 2</button>
+    <button class="button3">Кнопка 3</button> -->
+
+     <!-- Блок 4 -->
+
+     <!-- <ul>
+        <li>Элемент 1</li>
+        <li>Элемент 2</li>
+        <li>Элемент 3</li>
+     </ul>
+
+     <button class="button1">Добавляем элемент</button>
+     <button class="button2">Удаляем элемент</button>
+     <button class="button3">Добавляем класс</button> -->
+
+      <!-- Блок 5 -->
+     <!-- <div class="content"></div> -->
+
+    <script>
+
+        // const btn = document.querySelector('.button')
+
+        // let count = 0;
+        // let counter = 0;
+        // btn.onclick = function () {
+        //     console.log('Click js button');
+        //     count++;
+        //     console.log(`Кликов по кнопке ${count}`);
+        // }
+
+        // btn.addEventListener('click', function (e) {
+        //     console.log('click add');
+        // });
+
+        // btn.addEventListener('click', function (e) {
+        //     console.log('click add two');
+        // });
+
+        // Можно вынести функцию
+
+        // const click = function () {
+        //     console.log('Click js button');
+        //     count++;
+        //     console.log(`Кликов по кнопке ${count}`);
+        // }
+
+        // btn.onclick = click;
+
+        // Колбек - фнутри функции есть аргументы которые являются функцией
+        // btn.addEventListener('click', click);
+
+        // Задание 2
+
+        // const butEl = document.querySelector('.button');
+        // butEl.addEventListener('click', function (event) {
+        //     console.log(event);
+        // });
+
+        // const but = document.querySelectorAll('.button');
+        // but.forEach(element => {
+        //     element.addEventListener('click', function (event) {
+        //         const target = event.target;
+        //         console.log(target);
+        //     });
+        // });
+
+        // Задание 3
+
+        // const menuEl = document.querySelector('.menu');
+        //     const fun = (e) => {
+        //         console.log(event.target, event.currentTarget);
+        //     }
+
+        //     menuEl.addEventListener('click', fun);
+
+        // Задание 4
+
+        //  window.addEventListener('load', function (e) {
+        //     console.log('Все загрузилось');
+        //  });
+
+        //  document.addEventListener('DOMContentLoaded', function (e) {
+        //     console.log('loaded');
+        //  });
+
+        // Задание 5
+
+        // const bt = document.querySelector('.button');
+        // bt.addEventListener('mouseover', function (e) {
+        //     console.log('Не нужно наводить, ты лучше нажми');
+        // });
+
+        // bt.addEventListener('mouseleave', function (e) {
+        //     console.log('Не нужно убегать');
+        // });
+
+        // Задание 6
+
+        // window.addEventListener('keydown', function (e) {
+        //     // console.log(e);
+        //     console.log(e.key);
+        // });
+
+        // Задание 7
+
+        // const link = document.querySelector('.link');
+        // link.addEventListener('click', function (e) {
+        //     e.preventDefault();
+        //     console.log('hello link');
+        // });
+
+        // Задание 8
+
+        // document.addEventListener('copy', function (e) {
+        //     const copyText = document.getSelection().toString();
+        //     console.log(copyText);
+        // });
+
+        // Задание 9
+
+        // window.addEventListener('resize', function (e) {
+        //     console.log('resize');
+        // });
+
+        // Задание 10
+
+        // const inputEl = document.querySelector('input');
+
+        // inputEl.addEventListener('input', (event)=>{
+        //     if (Number(event.target.value) === 123) {
+        //         console.log('верно');
+        //     } else {
+        //         console.log('Не верно');
+        //     }
+        // });
+
+        // Задание 11
+
+
+        // const inputEl = document.querySelector('.input');
+        // const form = document.querySelector('form');
+        // const errorEl = document.querySelector('.error');
+
+        // form.addEventListener('submit', (event) => {
+        //     if (inputEl.value === '') {
+        //         event.preventDefault();
+        //         errorEl.textContent = 'Поле не должно быть пустым';
+        //     }
+        // });
+
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
