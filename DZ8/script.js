@@ -56,7 +56,7 @@
 
 
 
-document.querySelectorAll('li:nth-child(2n)').forEach(e => e.style.backgroundColor = 'yellow');
+// document.querySelectorAll('li:nth-child(2n)').forEach(e => e.style.backgroundColor = 'yellow');
 
 
 
