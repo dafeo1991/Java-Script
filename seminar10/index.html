@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product__box {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            width: 250px;
+            border: 1px solid black;
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="product__box">
+        <!-- <div class="product">
+            <img class="product__img" src="photo.jpg" alt="photo">
+            <div class="product__content">
+                <a class="product__name" href="product.html">Название товара из HTML</a>
+                <p class="product__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p class="product__price">55</p>
+            </div>
+        </div> -->
+    </div>
+
+    <script>
+
+        const productsData = [
+            {
+                src: 'img.png',
+                alt: 'img obj data',
+                name: 'Название из obj data 1',
+                link: 'product1.html',
+                desc: 'Описание товара из obj data 1',
+                price: 21000,
+            },
+            {
+                src: 'img2.png',
+                alt: 'img obj data new photo 2',
+                name: 'Название нового товара из obj data 2',
+                link: 'product2.html',
+                desc: 'Описание нового товара 2 из obj data',
+                price: 11000,
+            },
+            {
+                src: 'img3.png',
+                alt: 'img obj data new photo 3',
+                name: 'Название нового товара из obj data 3',
+                link: 'product3.html',
+                desc: 'Описание нового товара 3 из obj data',
+                price: 31000,
+            }
+        ]
+
+        productsData.forEach(productData => {
+
+            const productBox = document.querySelector('.product__box');
+
+            const productEl = document.createElement('div');
+            productEl.classList.add('product');
+
+            const productContent = document.createElement('div');
+            productContent.classList.add('product__content');
+
+            const productImg = document.createElement('img');
+            productImg.classList.add('product__img');
+            // productImg.setAttribute('alt', 'photo js');
+            productImg.setAttribute('alt', productData.alt);
+            // productImg.src = 'photo2.jpg';
+            productImg.src = productData.src;
+
+            const productLink = document.createElement('a');
+            // productLink.href = 'product.html';
+            productLink.href = productData.link;
+            // productLink.textContent = 'Название товара из JS';
+            productLink.textContent = productData.name;
+
+            const productText = document.createElement('p');
+            productText.classList.add('product__text');
+            // productText.textContent = 'Описание товара но уже из JS';
+            productText.textContent = productData.desc;
+
+            const productPrice = document.createElement('p');
+            productPrice.classList.add('product__price');
+            // productPrice.textContent = 22000;
+            productPrice.textContent = productData.price;
+
+            productContent.appendChild(productLink);
+            productContent.appendChild(productText);
+            productContent.appendChild(productPrice);
+            productEl.appendChild(productImg);
+            productEl.appendChild(productContent);
+            productBox.appendChild(productEl);
+
+        });
+
+
+
+
+
+
+
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
